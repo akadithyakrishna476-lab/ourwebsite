@@ -1,0 +1,551 @@
+/* a1c.css.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 3px solid #003366;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header .logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.college-info {
+  flex: 1;
+  text-align: center;
+}
+
+.college-info h1 {
+  font-size: 22px;
+  color: #003366;
+  font-weight: bold;
+}
+
+.college-info p {
+  font-size: 13px;
+  color: #444;
+}
+
+.college-info p.accredited {
+  font-weight: bold;
+  color: rgb(126, 13, 13);
+}
+
+/* navigation */
+/* Navbar */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Navbar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 60px;   /* adjust to header height */
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(90deg, #003366, #0055a5);
+  padding: 8px 15px;
+  font-family: 'Poppins';
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border-bottom: none;
+}
+
+/* Left MENU */
+.menu-left {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Right Hamburger */
+.menu-right {
+  position: relative;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+.hamburger:hover {
+  transform: rotate(90deg);
+}
+
+#nav-toggle {
+  display: none;
+}
+
+/* Dropdown menu */
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #004080;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.nav-menu li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background: #ffcc00;
+  color: #003366;
+  font-weight: 600;
+  padding-left: 28px; /* stylish slide effect */
+}
+
+/* Show menu on click */
+#nav-toggle:checked ~ .nav-menu {
+  display: block;
+}
+
+/* new */
+
+/* Submenu (default) */
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  background: #003366;
+}
+
+.submenu li a {
+  padding: 12px 28px;
+  font-size: 14px;
+  color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Special styling for B.Tech */
+.submenu li a.submenu-btech {
+  background: #057276;
+  color: white !important;
+  font-weight: bold;
+  padding: 12px 90px; /* extra indent */
+}
+
+.submenu li a.submenu-btech:hover {
+  background: #ffcc00;
+  color: #003366 !important;
+}
+
+/* ✅ Special styling for M.Tech */
+.submenu li a.submenu-mtech {
+  background: #057276;
+  color: white !important;
+  font-weight: bold;
+  padding: 12px 90px; /* extra indent */
+}
+
+.submenu li a.submenu-mtech:hover {
+  background: #ffcc00;
+  color: #003366 !important;
+}
+
+
+
+
+a.submenu li a:hover {
+  background: #ffcc00;
+  color: #003366;
+}
+
+/* Show submenu on hover */
+.nav-menu li:hover > .submenu {
+  display: block;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Banner */
+ .banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom:20px;
+}
+
+.banner-container img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+} 
+
+/* Content */
+main {
+  padding: 20px;
+}
+
+.course {
+  margin-bottom: 15px;
+}
+
+.course h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.course p {
+  font-size: 15px;
+  color: #555;
+}
+
+.course li {
+  padding: 10px;
+}
+
+/* Departments */
+.departments {
+  margin: 10px 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.departments h2 {
+  color: #003366;
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-left: 5px solid #ffcc00;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.dept-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dept-card {
+  background: #003366;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.dept-card:hover {
+  background: #ffcc00;
+  color: #003366;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+.college-footer {
+  background: #143A73;
+  color: #fff;
+  font-size: 15px;
+  padding-top: 35px;
+}
+
+.college-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.college-footer a:hover {
+  color: yellow;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  gap: 25px;
+  padding-bottom: 24px;
+}
+
+.footer-col { min-width: 180px; flex: 1 1 210px; }
+.footer-col h3 { font-size: 20px; margin-bottom: 10px; }
+.footer-col h4 { color: #f7f5f5; margin-bottom: 8px; font-size: 16px; font-weight: bold; }
+.footer-col ul { list-style: none; padding-left: 0; margin: 0; }
+.footer-col ul li { margin-bottom: 7px; }
+.footer-col ul li a { color: #fff; text-decoration: none; transition: color 0.2s; }
+.footer-col ul li a:hover { color: #ffcc00; }
+
+.footer-socials { display: flex; gap: 10px; margin-top: 5px; }
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #25589A;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.social-btn:hover { background: #ffcc00; color: #143A73; }
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 14px auto 0 auto;
+  padding: 9px 0;
+  font-size: 14px;
+  color: #c9cdda;
+  gap: 12px;
+}
+
+.footer-link { color: #fff; text-decoration: none; margin-right: 18px; }
+.footer-link:last-child { margin-right: 10px; }
+.footer-link:hover { color: #ffcc00; }
+
+.admission-btn {
+  background: #205DAA;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: background 0.2s, color 0.2s;
+}
+.admission-btn:hover { background: #ffcc00; color: #143A73; }
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-content .logo img {
+    height: 50px;
+    max-width: 70px;
+  }
+
+  .college-info h1 {
+    font-size: 16px;
+  }
+
+  .college-info p {
+    font-size: 12px;
+  }
+
+  /* Center Department Heading */
+  .menu-left {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Fix extra space below banner */
+  .banner-container {
+    margin-bottom: 5px;
+  }
+
+  .course {
+    margin-top: 5px;
+  }
+}
+/* === Student Clubs Section === */
+.clubs-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.clubs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.clubs-section .intro {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+/* Club Card Styles */
+.club-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.club-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+}
+
+.club-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #2a5d9f; /* GECI theme color */
+  border-left: 5px solid #2a5d9f;
+  padding-left: 10px;
+}
+
+.club-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Inner lists (like NSS office bearers) */
+.club-card ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.club-card li {
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 0.95rem;
+}
+/* Section Headings */
+.clubs-section h2,
+.departments h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0 15px;
+   /* theme color */
+}
+/* Club Logo Styling - No Border */
+.club-logo {
+  display: block;
+  margin: 15px auto 20px; /* center with spacing */
+  width: 100px; /* size of logo */
+  height: 100px; /* keep square for circle */
+  border-radius: 50%; /* perfectly round */
+  object-fit: cover; /* ensure image fits nicely */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* elegant shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.club-logo:hover {
+  transform: translateY(-6px) scale(1.1); /* slight zoom on hover */
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3); /* deeper shadow on hover */
+}
+.clubs-section h2 {
+  color: #003366;     /* theme blue */
+  font-size: 28px;    /* increased size */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.club-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #205DAA;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+.club-link:hover {
+  background: #ffcc00;
+  color: #003366;
+}
